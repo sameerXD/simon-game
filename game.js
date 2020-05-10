@@ -18,7 +18,7 @@ keypressFunction();
 
 
 
-function keypressFunction(){$(document).on("keypress",function(){
+function keypressFunction(){$(document).on("click",function(){
 
 if (!started){
   nextSequence();
