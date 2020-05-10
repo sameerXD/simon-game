@@ -33,7 +33,7 @@ if (!started){
 
 // random number between 0-3
 function nextSequence(){
-    userClickedPattern = [];
+   userClickedPattern = [];
   level++;
    $("#level-title").text("Level " + level);
 
@@ -70,6 +70,8 @@ function animatePress(currentColor){
 
 //function stores the id of the button clicked
 function clickColor(){$(".btn").on("click",function(){
+ 
+ userClickedPattern = [];
 
   var userChosenColour = $(this).attr("id");
   playSound(userChosenColour);
